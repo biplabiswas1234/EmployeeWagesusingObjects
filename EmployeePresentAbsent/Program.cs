@@ -6,8 +6,8 @@ namespace EmployeePresentAbsent
     {
         static void Main(string[] args)
         {
-            CheckPresentAbsent checkPresentAbsent = new CheckPresentAbsent();
-            checkPresentAbsent.CheckEmpPresentAbsent();
+            DailyWages checkEmpwages = new DailyWages();
+            checkEmpwages.CheckEmpPresentAbsent();
         }
     }
 }
