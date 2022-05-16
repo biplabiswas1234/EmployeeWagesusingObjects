@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeePresentAbsent
 {
-    public class CalWagesForMon
+    public class MaxEmpHou100Days20
     {
         public int EmpHour = 0;
         public int WagesPerHour = 20;
@@ -14,10 +14,11 @@ namespace EmployeePresentAbsent
         public const int IsPartTime = 2;
         public int EmployeeDay = 1;
         public int TotalWages = 0;
+        public int TotalHours = 0;
         public void EmployeeWages()
         {
-            while (EmployeeDay <= 20)
-            {
+            while (EmployeeDay <= 20 && TotalHours <= 100)
+              {
                 Random EmpType = new Random();
                 int EmpCheck = EmpType.Next(0, 3);
                 switch (EmpCheck)
@@ -36,14 +37,20 @@ namespace EmployeePresentAbsent
 
                         break;
                 }
-                int EmployeeWage = EmpHour * WagesPerHour;
-                TotalWages += EmployeeWage;
+                int EmpWages = EmpHour * WagesPerHour;
+                TotalWages += EmpWages;
+                TotalHours += EmpHour;
                 EmployeeDay++;
-                
+
             }
             Console.WriteLine("Total Wages:" + TotalWages);
+            Console.WriteLine("Total days:" + (EmployeeDay-1));
+
+
         }
 
 
     }
 }
+
+        

@@ -6,7 +6,7 @@ namespace EmployeePresentAbsent
     {
         static void Main(string[] args)
         {
-            CalWagesForMon checkEmpwages = new CalWagesForMon();
+            MaxEmpHou100Days20 checkEmpwages = new MaxEmpHou100Days20();
             checkEmpwages.EmployeeWages();
         }
     }
