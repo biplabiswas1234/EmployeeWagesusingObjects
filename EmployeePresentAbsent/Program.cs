@@ -6,8 +6,8 @@ namespace EmployeePresentAbsent
     {
         static void Main(string[] args)
         {
-            PartTimeWagesToo checkEmpwages = new PartTimeWagesToo();
-            checkEmpwages.AlsoPartTimeWages();
+            EmpWagesUsingSwitchCase checkEmpwages = new EmpWagesUsingSwitchCase();
+            checkEmpwages.EmployeeWages();
         }
     }
 }
