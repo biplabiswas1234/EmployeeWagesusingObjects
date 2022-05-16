@@ -6,7 +6,7 @@ namespace EmployeePresentAbsent
     {
         static void Main(string[] args)
         {
-            EmpWagesUsingSwitchCase checkEmpwages = new EmpWagesUsingSwitchCase();
+            CalWagesForMon checkEmpwages = new CalWagesForMon();
             checkEmpwages.EmployeeWages();
         }
     }
